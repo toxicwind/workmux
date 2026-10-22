@@ -1,0 +1,7 @@
+# workmux — autonomous rig task wiring (Phase-B).
+# bin/run = workmux CLI; bin/check = fmt + unit test gate.
+
+[tasks]
+run = "./bin/run"
+check = "./bin/check"
+test = "cargo test --bin workmux"

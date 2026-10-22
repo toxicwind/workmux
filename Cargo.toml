@@ -105,3 +105,7 @@ pkg-url = "{ repo }/releases/download/v{ version }/{ name }-darwin-amd64.{ archi
 
 [package.metadata.binstall.overrides.aarch64-apple-darwin]
 pkg-url = "{ repo }/releases/download/v{ version }/{ name }-darwin-arm64.{ archive-format }"
+
+# Isolate this vendored crate from the broken estate parent workspace
+# (/home/toxic/estate/Cargo.toml declares a missing crates/tau-ast member). Additive.
+[workspace]
